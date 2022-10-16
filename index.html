@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <script src="https://kit.fontawesome.com/fa6ec652e5.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,51 +13,63 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+    <style>
+html, body ,img{
+    overflow-x:hidden;
+    width:100%;
+   /* You may also want to try adding:*/
+    margin: 0;
+    padding: 0;
+}
+
+    </style>
 </head>
-<boby>
-  <nav class="sticky-top navbar navbar-expand-lg " style="background-color: white;">
-    <div class="container-fluid">
-      <a class="navbar-brand ms-5" href="#">
-        <img src="./images/download.jfif" alt="" style="width:300px ; margin-left:30px;">
+
+<body>
+  <div class="">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: white;">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="./images/logo.png" alt="" style="width:300px ; margin-left:40px;">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse me-auto" id="navbarNav">
-        <ul class="navbar-nav me-auto mr-auto">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="width: 100%;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-auto" id="navbarNav">
+                <ul class="navbar-nav me-auto mr-auto">
+        
+                </ul>
+                <ul class="navbar-nav  me-auto"  >
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#" style="color: rgb(8, 7, 8); "><strong>&nbsp;&nbsp; HOME </strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#"><strong>&nbsp;COURSES</strong></a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#"><strong>&nbsp;PLACEMENTS</strong></a>
+                  </li>
+                  <li class="nav-item  ">
+                    <a class="nav-link  "><strong>&nbsp;GALLERY</strong></a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#"><strong>&nbsp;ABOUT US</strong></a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link "><strong>&nbsp;CONTACTS</strong></a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+</div>
 
-        </ul>
-        <ul class="navbar-nav fs-5  ms-5 me-auto" style="margin-left: 30px;">
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: blueviolet; margin-left: 40px;"><strong>Home </strong></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-5" href="#">Courses</a>
-          </li>
-          <li class="nav-item fs-5">
-            <a class="nav-link" href="#">placements</a>
-          </li>
-          <li class="nav-item fs-5 ">
-            <a class="nav-link ">gallery</a>
-          </li>
-          <li class="nav-item fs-5">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-item fs-5">
-            <a class="nav-link ">Contacts</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div id="carouselExampleCaptions " class="carousel slide" data-bs-ride="false" style="width: 100%;">
 
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width:100% ;text-align: start;">
-
-    <div class="carousel-inner">
+    <div class="carousel-inner w-100">
       <div class="carousel-item active">
-        <img src="./images/6.jpg" class="d-block w-100" alt="..." style="width: 100%;height: 500px; ">
-        <div class="align-left">
+        <img src="./images/6.jpg" class="d-block w-100" alt="..." style="height: 600px;  ">
+        <div class="">
           <div class="carousel-caption me-5 "style="text-align:start ;">
             <h1
               style="font-size: 59px; line-height: 52px;  text-align: left; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
@@ -96,8 +108,8 @@
             software training and placement in emerging <br> technologies like Big Data,
             Hadoop, Spark,Data Scince, Machine Learning, <br> Deep Learning and AI.</p>
             
-            <button style="width:200px;height:70px; background-color:#5e068a ;align-items: flex-start;
-            display: inline-block;
+            <button style="width:200px;height:70px; background-color:#5e068a ;
+          
             font-size: 18px;
             color: white;
             border: #5e068a;
@@ -161,12 +173,40 @@
                  border-bottom: 2px solid grey;">Comments</textarea>
               </div>
           </form>
+          <br>
           
-          </div>
-          <div class="modal-footer" style="text-align: start;"><button class=" w-25" style="background-color: #5e068a; color: white;border-radius: 20px;">SUBMIT</button>
-          </div>
+          <div style="text-align: start; margin-left: 30px;"><button class=" w-25" style="background-color: #5e068a; color: white;border-radius: 20px;">SUBMIT</button>
+          </div></div>
         </div>
       </div>
     </div>
 
-</boby>
+    <div class="container " style="width:95% ;">
+      <div class="row ">
+          
+        <div class="col-lg-7 col-md-12 col-sm-12"  >
+            <div class="about-container" style="margin-top: 20px;">
+            <p style="color:rgb(63, 10, 113) ;margin-top: 10px;font-family: 'Muli' !important;font-size: 40px;">Luminar Technolab Pvt Ltd</p>
+            <p style="font-size:19px ;color:rgb(201, 158, 241)">CIN: U80220KL2021PTC071578</p>
+            <p style="    line-height : 28px;
+            font-size: 15px;
+            max-width: 565px;">Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing advanced
+                level software training to Students and by helping them to get placed in IT companies. We are a team of
+                IT professionals who have experience in IT sector for more than 15 plus years. Our fresher’s career
+                foster programs are Big Data Training, Data Science Training, Data Analytics Training, Python Training,
+                Software Testing Training & Selenium Training in Cochin, Kerala are designed in such a way to match with
+                the current industry requirements. Our Vision is to provide 100% placements to students those who enroll
+                with us for our specialized courses.</p>
+                <button  style="height: 60px; background-color: #5e068a;width: 150px; border-radius: 25px;font-size: 19px;color: white;border: none;">
+                    <strong>learn more </strong></button>
+        </div>
+    </div>
+        <div class="col-lg-5 col-md-12 col-sm-12" style="align-items: center;">
+            <img src="./images/qq.jpg" alt="">
+        </div>
+    </div>
+  
+  </div>
+
+
+</body>
