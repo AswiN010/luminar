@@ -1,0 +1,22 @@
+div{
+
+    background-color:yellow ; width: 600px; height: 600px;font-size: 34px;
+}
+
+
+
+
+@media(max-width: 400px) 
+{
+    div
+      {
+        background-color: blue;
+      }
+    p.text
+     {
+    
+       font-size: 10px;
+    
+    }
+    
+}
